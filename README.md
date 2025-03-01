@@ -1,6 +1,8 @@
-# TinyFPGA BX USB Serial
+# FPGA USB Serial
 
-![](usb_ser_ice40_detail.png)
+Forked from https://github.com/davidthings/tinyfpga_bx_usbserial
+
+Targetting Xilinx Artix 7
 
 ## Origins
 
