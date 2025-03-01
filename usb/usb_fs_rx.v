@@ -49,6 +49,7 @@ module usb_fs_rx (
     the signal twice ensures it will be either 1 or 0 and nothing in between.
   */
 
+  (* async_reg="true" *)
   reg [3:0] dpair_q = 0;
 
   always @(posedge clk) begin
