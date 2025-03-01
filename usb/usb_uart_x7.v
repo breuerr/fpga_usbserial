@@ -30,8 +30,6 @@
 
 */
 
-`include "../../pipe/rtl/pipe_defs.v"
-
 module usb_uart (
         input  clk_48mhz,
         input reset,
@@ -61,7 +59,7 @@ module usb_uart (
 
     //wire [3:0] debug;
 
-    usb_uart_core_np u_u_c_np (
+    usb_uart_core uart (
         .clk_48mhz  (clk_48mhz),
         .reset      (reset),
 
