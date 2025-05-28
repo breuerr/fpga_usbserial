@@ -208,6 +208,9 @@ module usb_fs_out_pe #(
           endcase
         end
 
+      end  // end of the always @*
+
+      always @* begin
         // Determine the next get_address (init, inc, maintain)
         if (ep_state_next[ep_num][1:0] == READY_FOR_PKT) begin
           ep_get_addr_next[ep_num][5:0] <= 0;
